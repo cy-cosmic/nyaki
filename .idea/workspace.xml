@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb366b78-9b32-46f8-86ba-394bb08c1d92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/nyakiapp/static/img/care-2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +104,7 @@
       <workItem from="1776012627155" duration="10666000" />
       <workItem from="1776038888926" duration="328000" />
       <workItem from="1776295836230" duration="2047000" />
-      <workItem from="1776357157588" duration="12666000" />
+      <workItem from="1776357157588" duration="13050000" />
     </task>
     <servers />
   </component>
