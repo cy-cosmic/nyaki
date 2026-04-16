@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb366b78-9b32-46f8-86ba-394bb08c1d92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/nyakiapp/static/img/logo/logo-full.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nyakiapp/static/img/logo/logo-symbol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nyakiapp/static/img/logo/logo-tight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nyakiapp/static/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/nyakiapp/static/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nyakiapp/static/img/logo/logo-symbol.png" beforeDir="false" afterPath="$PROJECT_DIR$/nyakiapp/static/img/logo/logo-symbol.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +42,14 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/mercurial/PycharmProjects/nyaki/nyakiapp/static/img",
+    "last_opened_file_path": "/home/mercurial/PycharmProjects/nyaki/nyakiapp/static/img/logo",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nyakiapp/static/img/logo" />
       <recent name="$PROJECT_DIR$/nyakiapp/static/img" />
       <recent name="$PROJECT_DIR$/nyakiapp/static" />
     </key>
@@ -107,7 +103,7 @@
       <workItem from="1776012627155" duration="10666000" />
       <workItem from="1776038888926" duration="328000" />
       <workItem from="1776295836230" duration="2047000" />
-      <workItem from="1776357157588" duration="5957000" />
+      <workItem from="1776357157588" duration="6517000" />
     </task>
     <servers />
   </component>
