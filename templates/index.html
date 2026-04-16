@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
+{% block head %}
+    <style>
+
+    </style>
+{% endblock head %}
 {% load static %}
 {% block content %}
 
@@ -16,13 +21,17 @@
                                     <h2 class="display-3 mb-5 animated slideInDown">Nyaki Adult Family Home</h2>
                                     <div class="row">
                                         <div class="col-lg-12 col-6">
-                                            <p class="fw-bold mb-4" style="color:#444!important;">24-Hour compassionate care in a homely
-                                        environment</p>
+                                            <p class="fw-bold mb-4" style="color:#444!important;">24-Hour compassionate
+                                                care in a homely
+                                                environment</p>
                                         </div>
                                     </div>
 
-                                    <a href="" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">Schedule a
-                                        Tour</a>
+                                    <button class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3"
+                                            data-bs-toggle="modal" data-bs-target="#calendarModal">
+                                        Schedule a
+                                        Tour
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +191,7 @@
                         visit.</p>
                 </div>
                 <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="">Schedule Now</a>
+                    <button class="btn btn-lg btn-secondary rounded-pill py-3 px-5" data-bs-toggle="modal" data-bs-target="#calendarModal">Schedule Now</button>
                 </div>
             </div>
         </div>
@@ -236,5 +245,24 @@
             </div>
         </div>
     </div>
+
     <!-- Testimonial End -->
+    <!-- Modal -->
+    <div class="modal fade" id="calendarModal" tabindex="-1" role="dialog"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content border-0 " style="border-radius: 10px!important;">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+                </div>
+                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3cF0DUy82Zr-aLw_V6Umr0HNymlEz0PrBHXbNC2gg1V9tLB9DYwkm6sDvQ5bwyDsqoITitxQSD?gv=true"
+                        style="height:100vh!important; border:0;!important;">
+                </iframe>
+            </div>
+        </div>
+    </div>
 {% endblock %}
+{% block scripts %}
+
+{% endblock scripts %}
