@@ -8,14 +8,21 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{% static 'img/care-2.png'%}" alt="Image">
+                    <img class="w-100" src="{% static 'img/care-2.png' %}" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-7">
-                                    <h1 class="display-2 mb-5 animated slideInDown">Nyaki Adult Family Home</h1>
-                                    <h6 class="text-black fw-bold mb-4">24-Hour compassionate care in a homely environment</h6>
-                                    <a href="" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">Schedule a Tour</a>
+                                    <h2 class="display-3 mb-5 animated slideInDown">Nyaki Adult Family Home</h2>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-6">
+                                            <p class="fw-bold mb-4" style="color:#444!important;">24-Hour compassionate care in a homely
+                                        environment</p>
+                                        </div>
+                                    </div>
+
+                                    <a href="" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">Schedule a
+                                        Tour</a>
                                 </div>
                             </div>
                         </div>
@@ -31,9 +38,11 @@
     <!-- About Start -->
     <div class="container-xxl py-5" id="about">
         <div class="container">
-            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
+                 style="max-width: 500px;">
                 <h1 class="display-5 mb-3">About Us</h1>
-                <p>Nyaki stands for thoughtful, compassionate care that upholds dignity, independence, and a true sense of home.</p>
+                <p>Nyaki stands for thoughtful, compassionate care that upholds dignity, independence, and a true sense
+                    of home.</p>
             </div>
 
             <div class="row g-5 align-items-center">
@@ -44,11 +53,18 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
 
-                    <p class="mb-4">We provide compassionate, person-centered care in a safe and comfortable home environment. Our mission is to preserve dignity, independence, and quality of life for every resident.</p>
-                    <p class="mb-4">Families trust us because we prioritize communication, consistency, and genuine care. Every resident is treated like family in a calm and respectful environment.</p>
+                    <p class="mb-4">We provide compassionate, person-centered care in a safe and comfortable home
+                        environment. Our mission is to preserve dignity, independence, and quality of life for every
+                        resident.</p>
+                    <p class="mb-4">Families trust us because we prioritize communication, consistency, and genuine
+                        care. Every resident is treated like family in a calm and respectful environment.</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Licensed care</p>
                     <p><i class="fa fa-check text-primary me-3"></i>24/7 support</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Personalized care plans</p>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="{% url 'about' %}">More
+                        About Us</a>
                 </div>
             </div>
         </div>
@@ -59,34 +75,40 @@
     <!-- Feature Start -->
     <div class="container-fluid bg-light bg-icon my-5 py-6" id="services">
         <div class="container">
-            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
+                 style="max-width: 500px;">
                 <h1 class="display-5 mb-3">Our Services</h1>
-                <p>Below are some of the services we provide to support a safe, comfortable, and dignified living experience.</p>
+                <p>Below are some of the services we provide to support a safe, comfortable, and dignified living
+                    experience.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-white text-center h-100 p-4 p-xl-5">
                         <img class="img-fluid mb-4" src="img/icon-1.png" alt="">
                         <h4 class="mb-3">24/7 Personal Care Support</h4>
-                        <p class="mb-4">Around-the-clock assistance with daily activities such as mobility, hygiene, grooming, and safety supervision.</p>
-                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
+                        <p class="mb-4">Around-the-clock assistance with daily activities such as mobility, hygiene,
+                            grooming, and safety supervision.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="bg-white text-center h-100 p-4 p-xl-5">
                         <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
                         <h4 class="mb-3">Medication Management</h4>
-                        <p class="mb-4">Reliable support with medication reminders and administration to ensure consistency and proper health routines.</p>
-                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
+                        <p class="mb-4">Reliable support with medication reminders and administration to ensure
+                            consistency and proper health routines.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="bg-white text-center h-100 p-4 p-xl-5">
                         <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
                         <h4 class="mb-3">Personalized Care Plans</h4>
-                        <p class="mb-4">Individualized care plans tailored to each resident’s needs, including meals, companionship, and support.</p>
-                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
+                        <p class="mb-4">Individualized care plans tailored to each resident’s needs, including meals,
+                            companionship, and support.</p>
                     </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="{% url 'services' %}">More
+                        Services</a>
                 </div>
             </div>
         </div>
@@ -111,58 +133,34 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg'%}" alt="">
+                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg'%}" alt="">
+                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg'%}" alt="">
+                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg' %}" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg'%}" alt="">
+                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg' %}" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg'%}" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg'%}" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg'%}" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{% static 'img/house.jpg'%}" alt="">
-                                </div>
-                            </div>
+                        <div class="col-12 d-flex justify-content-center mt-5">
+                            <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill"
+                               href="{% url 'gallery' %}">View More</a>
                         </div>
 
                     </div>
@@ -179,7 +177,9 @@
             <div class="row g-5 align-items-center">
                 <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
                     <h1 class="display-5 text-white mb-3">Schedule a Tour</h1>
-                    <p class="text-white mb-0">We welcome you to visit and see our home in person. Schedule a tour to experience our care environment firsthand. Contact us today to arrange a convenient time to visit.</p>
+                    <p class="text-white mb-0">We welcome you to visit and see our home in person. Schedule a tour to
+                        experience our care environment firsthand. Contact us today to arrange a convenient time to
+                        visit.</p>
                 </div>
                 <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
                     <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="">Schedule Now</a>
@@ -193,16 +193,20 @@
     <!-- Testimonial Start -->
     <div class="container-fluid bg-light bg-icon py-6 mb-5">
         <div class="container">
-            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
+                 style="max-width: 500px;">
                 <h1 class="display-5 mb-3">Google Reviews</h1>
-                <p>We are proud of the trust families place in us and the positive feedback we receive from our community.</p>
+                <p>We are proud of the trust families place in us and the positive feedback we receive from our
+                    community.</p>
             </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="owl-carousel testimonial-carousel wow fadeInUp mb-5" data-wow-delay="0.1s">
                 <div class="testimonial-item position-relative bg-white p-5 mt-4">
                     <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
-                    <p class="mb-4">Exceptional care and genuine compassion—our family has complete peace of mind knowing our loved one is safe, comfortable, and well cared for every day.</p>
+                    <p class="mb-4">Exceptional care and genuine compassion—our family has complete peace of mind
+                        knowing our loved one is safe, comfortable, and well cared for every day.</p>
                     <div class="d-flex align-items-center">
-                        <img class="flex-shrink-0 rounded-circle" src="{% static 'img/man-user-circle-icon.png' %}" alt="">
+                        <img class="flex-shrink-0 rounded-circle" src="{% static 'img/man-user-circle-icon.png' %}"
+                             alt="">
                         <div class="ms-3">
                             <h5 class="mb-1">Client Name</h5>
                             <span>Profession</span>
@@ -211,9 +215,11 @@
                 </div>
                 <div class="testimonial-item position-relative bg-white p-5 mt-4">
                     <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
-                    <p class="mb-4">Exceptional care and genuine compassion—our family has complete peace of mind knowing our loved one is safe, comfortable, and well cared for every day.</p>
+                    <p class="mb-4">Exceptional care and genuine compassion—our family has complete peace of mind
+                        knowing our loved one is safe, comfortable, and well cared for every day.</p>
                     <div class="d-flex align-items-center">
-                        <img class="flex-shrink-0 rounded-circle" src="{% static 'img/woman-user-circle-icon.png' %}" alt="">
+                        <img class="flex-shrink-0 rounded-circle" src="{% static 'img/woman-user-circle-icon.png' %}"
+                             alt="">
                         <div class="ms-3">
                             <h5 class="mb-1">Another Client</h5>
                             <span>Profession</span>
@@ -221,6 +227,12 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="row g-4">
+                <div class="col-12 d-flex justify-content-center">
+                    <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="{% url 'services' %}">Leave
+                        a Review</a>
+                </div>
             </div>
         </div>
     </div>

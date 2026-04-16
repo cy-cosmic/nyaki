@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb366b78-9b32-46f8-86ba-394bb08c1d92" name="Changes" comment="" />
+    <list default="true" id="eb366b78-9b32-46f8-86ba-394bb08c1d92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/nyakiapp/static/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nyakiapp/static/img/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nyakiapp/static/img/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nyakiapp/static/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nyakiapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nyakiapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nyakiapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/nyakiapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/services.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -99,6 +114,7 @@
       <workItem from="1776012627155" duration="10666000" />
       <workItem from="1776038888926" duration="328000" />
       <workItem from="1776295836230" duration="2047000" />
+      <workItem from="1776357157588" duration="3783000" />
     </task>
     <servers />
   </component>
