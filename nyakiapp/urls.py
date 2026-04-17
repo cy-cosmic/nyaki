@@ -8,4 +8,5 @@ urlpatterns = [
     path("services", views.services, name="services"),
     path("gallery", views.gallery, name="gallery"),
     path("contact-us", views.contact, name="contact"),
+    path("api/reviews/", views.google_reviews, name="google-reviews"),
 ]

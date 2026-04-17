@@ -9,7 +9,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 environ.Env.read_env(str(BASE_DIR / '.env'))
 SECRET_KEY = env('DJANGO_SECRET_KEY')
-
+GOOGLE_PLACES_API_KEY = env("GOOGLE_PLACES_API_KEY")
+GOOGLE_PLACE_ID = env("GOOGLE_PLACE_ID")
 DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
@@ -102,7 +103,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_DIRS = [BASE_DIR / 'static',]
+STATICFILES_DIRS = [BASE_DIR / 'static', ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

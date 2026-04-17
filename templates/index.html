@@ -1,13 +1,8 @@
 {% extends 'base.html' %}
 {% block head %}
-    <style>
-
-    </style>
 {% endblock head %}
 {% load static %}
 {% block content %}
-
-
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -191,7 +186,9 @@
                         visit.</p>
                 </div>
                 <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <button class="btn btn-lg btn-secondary rounded-pill py-3 px-5" data-bs-toggle="modal" data-bs-target="#calendarModal">Schedule Now</button>
+                    <button class="btn btn-lg btn-secondary rounded-pill py-3 px-5" data-bs-toggle="modal"
+                            data-bs-target="#calendarModal">Schedule Now
+                    </button>
                 </div>
             </div>
         </div>
@@ -209,37 +206,44 @@
                     community.</p>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp mb-5" data-wow-delay="0.1s">
-                <div class="testimonial-item position-relative bg-white p-5 mt-4">
-                    <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
-                    <p class="mb-4">Exceptional care and genuine compassion—our family has complete peace of mind
-                        knowing our loved one is safe, comfortable, and well cared for every day.</p>
-                    <div class="d-flex align-items-center">
-                        <img class="flex-shrink-0 rounded-circle" src="{% static 'img/man-user-circle-icon.png' %}"
-                             alt="">
-                        <div class="ms-3">
-                            <h5 class="mb-1">Client Name</h5>
-                            <span>Profession</span>
+                {% if reviews %}
+                    {% for review in sample_reviews %}
+                        <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                            <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                            <p class="mb-4">{{ review }}</p>
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 rounded-circle"
+                                     src="{% static 'img/man-user-circle-icon.png' %}"
+                                     alt="">
+                                <div class="ms-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% elif not reviews %}
+                    <div class="testimonial-item position-relative bg-white p-5 mt-4">
+                        <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
+                        <p class="mb-4">Exceptional care and genuine compassion—our family has complete peace of mind
+                            knowing our loved one is safe, comfortable, and well cared for every day.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="flex-shrink-0 rounded-circle"
+                                 src="{% static 'img/woman-user-circle-icon.png' %}"
+                                 alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-1">Another Client</h5>
+                                <span>Profession</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial-item position-relative bg-white p-5 mt-4">
-                    <i class="fa fa-quote-left fa-3x text-primary position-absolute top-0 start-0 mt-n4 ms-5"></i>
-                    <p class="mb-4">Exceptional care and genuine compassion—our family has complete peace of mind
-                        knowing our loved one is safe, comfortable, and well cared for every day.</p>
-                    <div class="d-flex align-items-center">
-                        <img class="flex-shrink-0 rounded-circle" src="{% static 'img/woman-user-circle-icon.png' %}"
-                             alt="">
-                        <div class="ms-3">
-                            <h5 class="mb-1">Another Client</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
+                {% endif %}
 
             </div>
             <div class="row g-4">
                 <div class="col-12 d-flex justify-content-center">
-                    <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="{% url 'services' %}">Leave
+                    <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill"
+                       href="https://g.page/r/CTysFtNBsr5BEBM/review" target="_blank">Leave
                         a Review</a>
                 </div>
             </div>
@@ -247,22 +251,6 @@
     </div>
 
     <!-- Testimonial End -->
-    <!-- Modal -->
-    <div class="modal fade" id="calendarModal" tabindex="-1" role="dialog"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content border-0 " style="border-radius: 10px!important;">
-                <div class="d-flex p-3 justify-content-end">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                    </button></div>
-
-                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3cF0DUy82Zr-aLw_V6Umr0HNymlEz0PrBHXbNC2gg1V9tLB9DYwkm6sDvQ5bwyDsqoITitxQSD?gv=true"
-                        style="height:100vh!important; border:0;!important;">
-                </iframe>
-            </div>
-        </div>
-    </div>
 {% endblock %}
 {% block scripts %}
-
 {% endblock scripts %}

@@ -66,11 +66,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{% url 'index' %}" class="nav-item nav-link">Home</a>
-                <a href="{% url 'about' %}" class="nav-item nav-link">About Us</a>
-                <a href="{% url 'services' %}" class="nav-item nav-link">Services</a>
-                <a href="{% url 'gallery' %}" class="nav-item nav-link">Gallery</a>
-                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact Us</a>
+                <a href="{% url 'index' %}" class="nav-item nav-link {% if 'about' not in request.path and 'services' not in request.path and 'gallery' not in request.path and 'contact' not in request.path%} text-dark{% endif %}">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link {% if 'about' in request.path %}text-dark{% endif %}" >About Us</a>
+                <a href="{% url 'services' %}" class="nav-item nav-link {% if 'service' in request.path %}text-dark{% endif %}">Services</a>
+                <a href="{% url 'gallery' %}" class="nav-item nav-link {% if 'gallery' in request.path %}text-dark{% endif %}">Gallery</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link {% if 'contact' in request.path %}text-dark{% endif %}">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -115,7 +115,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <script>document.write(new Date().getFullYear())</script> &copy; <a href="{% url 'index' %}">Nyaki Adult Family Home</a>, All Right Reserved.
+                    <script>document.write(new Date().getFullYear())</script> &copy; <a href="{% url 'index' %}">Nyaki
+                    Adult Family Home</a>, All Right Reserved.
                 </div>
 
             </div>
@@ -128,6 +129,22 @@
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+<!--Appointment Modal -->
+<div class="modal fade" id="calendarModal" tabindex="-1" role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content border-0 " style="border-radius: 10px!important;">
+            <div class="d-flex p-3 justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3cF0DUy82Zr-aLw_V6Umr0HNymlEz0PrBHXbNC2gg1V9tLB9DYwkm6sDvQ5bwyDsqoITitxQSD?gv=true"
+                    style="height:100vh!important; border:0;!important;">
+            </iframe>
+        </div>
+    </div>
+</div>
 
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
