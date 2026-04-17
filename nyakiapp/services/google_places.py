@@ -21,7 +21,8 @@ def fetch_place_details():
     print(response.json())
 
     if data.get("status") != "OK":
-        raise Exception(f"Google Places error: {data.get('status')}")
+        # raise Exception(f"Google Places error: {data.get('status')}")
+        pass
 
     return data["result"]
 
