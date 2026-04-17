@@ -24,7 +24,7 @@ def fetch_place_details():
         # raise Exception(f"Google Places error: {data.get('status')}")
         pass
 
-    return data["result"]
+    return data
 
 
 def get_place_details_cached():
