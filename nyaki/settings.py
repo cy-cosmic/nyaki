@@ -22,10 +22,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'nyakiapp'
+    'nyakiapp',
+    'adminapp',
+    'django_hosts',
 ]
 
+ROOT_HOSTCONF = "nyaki.hosts"
+DEFAULT_HOST = "main"
+CSRF_COOKIE_DOMAIN=env('CSRF_COOKIE_DOMAIN')
+SESSION_COOKIE_DOMAIN=env('SESSION_COOKIE_DOMAIN')
+CSRF_TRUSTED_ORIGINS=env.list('CSRF_TRUSTED_ORIGINS', default=[])
+
 MIDDLEWARE = [
+    "django_hosts.middleware.HostsRequestMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -104,6 +113,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [BASE_DIR / 'static', ]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'smtp.gmail.com'

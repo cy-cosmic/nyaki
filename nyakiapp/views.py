@@ -3,6 +3,7 @@ import random
 from django.http import JsonResponse
 from django.shortcuts import render
 
+from adminapp.models import ForestRidgeHome, RStreetHome, FoodAndActivities
 from nyakiapp.services.google_places import get_place_details_cached
 
 
@@ -66,4 +67,7 @@ def contact(request):
 
 
 def gallery(request):
+    forest_ridge_photos = ForestRidgeHome.objects.all()
+    r_street_photos = RStreetHome.objects.all()
+    activities_photos = FoodAndActivities.objects.all()
     return render(request, "gallery.html", locals())
