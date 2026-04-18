@@ -117,44 +117,27 @@
         document.getElementById("uploadConfirmBtn").addEventListener("click", () => {
             const formData = new FormData();
             formData.append("image", selectedFile);
+            formData.append("csrfmiddlewaretoken", '{{csrf_token}}');
 
             fetch("{% url 'forest_ridge' %}", {
                 method: "POST",
-                body: formData,
-                headers: {
-                    "X-CSRFToken": getCookie("csrftoken")
-                }
+                body: formData
             }).then(() => location.reload());
         });
 
-        function getCookie(name) {
-            let cookieValue = null;
-            if (document.cookie && document.cookie !== '') {
-                const cookies = document.cookie.split(';');
-                for (let cookie of cookies) {
-                    cookie = cookie.trim();
-                    if (cookie.startsWith(name + '=')) {
-                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                        break;
-                    }
-                }
-            }
-            return cookieValue;
-        }
+
     </script>
     <script>
         document.querySelectorAll(".delete-btn").forEach(btn => {
             btn.addEventListener("click", function () {
-
                 const url = this.dataset.url;
-
+                const csrftoken = '{{csrf_token}}'
                 if (!confirm("Delete this image?")) return;
-
                 fetch(url, {
                     method: "POST",
-                    headers: {
-                        "X-CSRFToken": getCookie("csrftoken")
-                    }
+                    body: new URLSearchParams({
+                        csrfmiddlewaretoken: csrftoken
+                    })
                 })
                     .then(res => res.json())
                     .then(data => {
@@ -165,18 +148,5 @@
 
             });
         });
-
-        function getCookie(name) {
-            let cookieValue = null;
-            if (document.cookie) {
-                document.cookie.split(";").forEach(c => {
-                    c = c.trim();
-                    if (c.startsWith(name + "=")) {
-                        cookieValue = decodeURIComponent(c.slice(name.length + 1));
-                    }
-                });
-            }
-            return cookieValue;
-        }
     </script>
 {% endblock %}
