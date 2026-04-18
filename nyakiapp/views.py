@@ -30,6 +30,8 @@ def index(request):
         if r.get("text")  # avoid empty reviews
     ]
     sample_reviews = random.sample(cleaned_reviews, k=min(5, len(cleaned_reviews)))
+    forest_photos = ForestRidgeHome.objects.all()
+    rstreet_photos = RStreetHome.objects.all()
     return render(request, "index.html", locals())
 
 
