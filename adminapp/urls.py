@@ -7,6 +7,7 @@ from adminapp import views
 app_name = 'admin'
 urlpatterns = [
     path("", views.index, name="admin"),
+    path("login/", views.login_view, name="login"),
     path("forest-ridge/", views.forest_ridge, name="forest_ridge"),
     path("forest-ridge/delete/<int:id>/", views.delete_forest, name="delete_forest"),
     path("rstreet/", views.rstreet, name="rstreet"),
